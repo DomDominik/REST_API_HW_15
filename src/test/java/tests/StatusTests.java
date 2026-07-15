@@ -11,13 +11,13 @@ public class StatusTests {
 
 @Test
     public void statusBaseTest() {
-        get("https://ru.selenoid.autotests.cloud/status")
+        get("https://selenoid.autotests.cloud/status")
                 .then()
                 .body("state.total",is(20));
     }
     @Test
     public void statusWithLogsTest() {
-        get("https://ru.selenoid.autotests.cloud/status")
+        get("https://selenoid.autotests.cloud/status")
                 .then()
                 .log().all()
                 .body("state.total",is(20));
@@ -29,7 +29,7 @@ public class StatusTests {
             .log().method()
             .log().headers()
             .when()
-            .get("https://ru.selenoid.autotests.cloud/status")
+            .get("https://selenoid.autotests.cloud/status")
             .then()
             .log().ifError()
             .log().status()
@@ -41,7 +41,7 @@ public class StatusTests {
             .log().uri()
             .log().method()
             .when()
-            .get("https://ru.selenoid.autotests.cloud/status")
+            .get("https://selenoid.autotests.cloud/status")
             .then()
             .log().status()
             .body("state.total",is(20))
@@ -53,7 +53,7 @@ public class StatusTests {
             .log().uri()
             .log().method()
             .when()
-            .get("https://ru.selenoid.autotests.cloud/status")
+            .get("https://selenoid.autotests.cloud/status")
             .then()
             .log().status()
             .body("state.total",is(20))
@@ -65,13 +65,13 @@ public class StatusTests {
             .log().uri()
             .log().method()
             .when()
-            .get("https://ru.selenoid.autotests.cloud/status")
+            .get("https://selenoid.autotests.cloud/status")
             .then()
             .log().status()
             .body("state.total",is(20))
             .statusCode(200)
-            .body("state.browsers.chrome",hasKey("127.0"))
-            .body("state.browsers.chrome",hasKey("128.0"));
+            .body("state.browsers.chrome",hasKey("148.0"))
+            .body("state.browsers.chrome",hasKey("149.0"));
     }
     @Test
     public void statusSchemaTest() {
@@ -79,7 +79,7 @@ public class StatusTests {
             .log().uri()
             .log().method()
             .when()
-            .get("https://ru.selenoid.autotests.cloud/status")
+            .get("https://selenoid.autotests.cloud/status")
             .then()
             .log().status()
             .body("state.total",is(20))
