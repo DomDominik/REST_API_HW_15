@@ -21,7 +21,7 @@ public class SelenoidHubStatusTests extends TestsBase{
     }
 
     @Test
-    public void textValidTest() {
+    public void textTest() {
         given()
                 .log().all()
                 .auth().basic("user1", "1234")

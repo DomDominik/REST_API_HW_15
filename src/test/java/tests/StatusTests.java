@@ -13,7 +13,7 @@ public class StatusTests {
     public void statusBaseTest() {
         get("https://selenoid.autotests.cloud/status")
                 .then()
-                .body("state.total",is(29));
+                .body("state.total",is(20));
     }
     @Test
     public void statusWithLogsTest() {

@@ -6,7 +6,6 @@ build/
 .kotlin
 
 ### IntelliJ IDEA ###
-.idea
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -17,8 +16,6 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
-.main
 
 ### Eclipse ###
 .apt_generated
