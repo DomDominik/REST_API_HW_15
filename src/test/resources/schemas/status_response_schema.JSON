@@ -1,0 +1,338 @@
+{"state": {
+  "type": "object",
+  "properties": {
+    "total": {
+      "type": "integer"
+    },
+    "used": {
+      "type": "integer"
+    },
+    "queued": {
+      "type": "integer"
+    },
+    "pending": {
+      "type": "integer"
+    },
+    "browsers": {
+      "type": "object",
+      "properties": {
+        "chrome": {
+          "type": "object",
+          "properties": {
+            "127.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "128.0": {
+              "type": "object",
+              "properties": {
+                "unknown": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    },
+                    "sessions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "container": {
+                            "type": "string"
+                          },
+                          "caps": {
+                            "type": "object",
+                            "properties": {
+                              "browserName": {
+                                "type": "string"
+                              },
+                              "version": {
+                                "type": "string"
+                              },
+                              "screenResolution": {
+                                "type": "string"
+                              },
+                              "enableVNC": {
+                                "type": "boolean"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "timeZone": {
+                                "type": "string"
+                              },
+                              "labels": {
+                                "type": "object",
+                                "properties": {
+                                  "manual": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "manual"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "browserName",
+                              "version",
+                              "screenResolution",
+                              "enableVNC",
+                              "name",
+                              "timeZone",
+                              "labels"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "container",
+                          "caps"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "count",
+                    "sessions"
+                  ]
+                }
+              },
+              "required": [
+                "unknown"
+              ]
+            }
+          },
+          "required": [
+            "127.0",
+            "128.0"
+          ]
+        },
+        "firefox": {
+          "type": "object",
+          "properties": {
+            "124.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "125.0": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "124.0",
+            "125.0"
+          ]
+        },
+        "opera": {
+          "type": "object",
+          "properties": {
+            "108.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "109.0": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "108.0",
+            "109.0"
+          ]
+        }
+      },
+      "required": [
+        "chrome",
+        "firefox",
+        "opera"
+      ]
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "total",
+    "used",
+    "queued",
+    "pending",
+    "browsers",
+    "videos"
+  ]
+},
+  "origin": {
+    "type": "string",
+    "format": "uri"
+  },
+  "browsers": {
+    "type": "object",
+    "properties": {
+      "chrome": {
+        "type": "integer"
+      },
+      "firefox": {
+        "type": "integer"
+      },
+      "opera": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "chrome",
+      "firefox",
+      "opera"
+    ]
+  },
+  "sessions": {
+    "type": "object",
+    "properties": {
+      "43e459b7342f96694a4a37bd727753fd": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "container": {
+            "type": "string"
+          },
+          "caps": {
+            "type": "object",
+            "properties": {
+              "browserName": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              },
+              "screenResolution": {
+                "type": "string"
+              },
+              "enableVNC": {
+                "type": "boolean"
+              },
+              "name": {
+                "type": "string"
+              },
+              "timeZone": {
+                "type": "string"
+              },
+              "labels": {
+                "type": "object",
+                "properties": {
+                  "manual": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "manual"
+                ]
+              }
+            },
+            "required": [
+              "browserName",
+              "version",
+              "screenResolution",
+              "enableVNC",
+              "name",
+              "timeZone",
+              "labels"
+            ]
+          },
+          "quota": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "container",
+          "caps",
+          "quota"
+        ]
+      },
+      "f7667ebda392fd10e8282f196e7e603f": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "container": {
+            "type": "string"
+          },
+          "caps": {
+            "type": "object",
+            "properties": {
+              "browserName": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              },
+              "screenResolution": {
+                "type": "string"
+              },
+              "enableVNC": {
+                "type": "boolean"
+              },
+              "name": {
+                "type": "string"
+              },
+              "timeZone": {
+                "type": "string"
+              },
+              "labels": {
+                "type": "object",
+                "properties": {
+                  "manual": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "manual"
+                ]
+              }
+            },
+            "required": [
+              "browserName",
+              "version",
+              "screenResolution",
+              "enableVNC",
+              "name",
+              "timeZone",
+              "labels"
+            ]
+          },
+          "quota": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "container",
+          "caps",
+          "quota"
+        ]
+      }
+    },
+    "required": [
+      "43e459b7342f96694a4a37bd727753fd",
+      "f7667ebda392fd10e8282f196e7e603f"
+    ]
+  },
+  "version": {
+    "type": "string"
+  },
+  "errors": {
+    "type": "array",
+    "items": {
+      "type": "object"
+    }
+  }
+}
